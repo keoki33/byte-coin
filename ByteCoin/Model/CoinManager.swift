@@ -35,7 +35,7 @@ struct CoinManager {
     
     
     func performRequest(with urlString: String) -> Void {
-        print(urlString)
+    
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
